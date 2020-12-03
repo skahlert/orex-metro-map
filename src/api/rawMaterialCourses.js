@@ -35,7 +35,8 @@ export const rawMatTKs = [
     stroke: "dashed",
     optional: false,
     icon: "computer",
-    url: null
+    url:
+      "https://lafargeholcim.docebosaas.com/pages/42/technical-training-mining-raw-material-handling"
   },
   {
     name: ["Quarry Management", "Dev. Program"],

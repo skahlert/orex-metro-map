@@ -11,7 +11,8 @@ export const maintenanceEngPathTKs = [
     stroke: "dashed",
     optional: false,
     icon: "computer",
-    url: null
+    url:
+      "https://lafargeholcim.docebosaas.com/pages/39/technical-training-maintenance-courses"
   },
   {
     name: "Kiln Maintenance",
@@ -85,7 +86,8 @@ export const maintenanceEngPathTKs = [
     stroke: "dashed",
     optional: false,
     icon: "computer",
-    url: null
+    url:
+      "https://lafargeholcim.docebosaas.com/pages/39/technical-training-maintenance-courses"
   },
   {
     name: ["Preventive Maintenance", "Engineers Dev. Program "],
@@ -124,7 +126,8 @@ export const electricalEngPathTKs = [
     stroke: "dashed",
     optional: false,
     icon: "computer",
-    url: null
+    url:
+      "https://lafargeholcim.docebosaas.com/pages/39/technical-training-maintenance-courses"
   },
   {
     name: ["Electical Power &", "Drives"],
@@ -136,6 +139,7 @@ export const electricalEngPathTKs = [
     stroke: "dashed",
     optional: false,
     icon: "computer",
-    url: null
+    url:
+      "https://lafargeholcim.docebosaas.com/pages/39/technical-training-maintenance-courses"
   }
 ];

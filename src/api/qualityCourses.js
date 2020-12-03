@@ -60,7 +60,8 @@ export const headOfLabTKs = [
     stroke: "solid",
     optional: false,
     icon: "computer",
-    url: null
+    url:
+      "https://lafargeholcim.docebosaas.com/pages/41/technical-training-quality-and-lab"
   },
   {
     name: ["Alternative Fuels &", "Raw Materials"],
