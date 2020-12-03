@@ -16,6 +16,7 @@ import {
   electricalEngPathTKs
 } from "./maintenanceCourses.js";
 import { prodEngPathTKs, processEngPathTKs } from "./processCourses.js";
+import { legendIcons } from "./legendIcons.js";
 
 export const renderMap = (s) => {
   s.attr({ viewBox: "220 0 1500 1000" });
@@ -158,12 +159,21 @@ export const renderMap = (s) => {
     PositionIcon(s, item);
   });
 
+  legend(s);
+
   //const jobMove1 = s.path("M990,180s150 -20,150,90c0,90,110,90,110,90").attr({stroke:maintenanceColor,strokeWidth:6,fill:"none",strokeLinejoin:"round"});
 
   //M0,0c79,0,130,45,130,45s47,45,130,45
   //`M${startX},${startY}c${width} ${0},${width/2} ${0},${width/2} ${height}s${0} ${height},${width} ${height}
   //M990,180c150 0,75 0,75 90s0 90 150 90
 };
+
+const legend = (s) => {
+  legendIcons.forEach((item) => {
+    TrainingKit(s, item);
+  });
+};
+
 const jobMove = (s, startX, startY, width, height, color) => {
   const bendFactor = 0.3;
   const start = `${startX},${startY}`;

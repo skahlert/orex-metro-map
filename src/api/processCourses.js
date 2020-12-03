@@ -1,4 +1,10 @@
-import { productionColor, processColor, qualityColor } from "./colors.js";
+import {
+  productionColor,
+  processColor,
+  brightGreen,
+  brightOrange,
+  brightRed
+} from "./colors.js";
 
 export const processEngPathTKs = [
   {
@@ -19,7 +25,7 @@ export const processEngPathTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 1105, y: 775 },
-    color: processColor,
+    color: brightRed,
     textPosition: "left",
     stroke: "solid",
     optional: false,
@@ -31,11 +37,11 @@ export const processEngPathTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 1105, y: 815 },
-    color: qualityColor,
+    color: brightOrange,
     textPosition: "right",
-    stroke: "dashed",
+    stroke: "solid",
     optional: false,
-    icon: "computer",
+    icon: null,
     url: null
   },
   {
@@ -43,7 +49,7 @@ export const processEngPathTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 1105, y: 735 },
-    color: processColor,
+    color: brightRed,
     textPosition: "left",
     stroke: "solid",
     optional: false,
@@ -55,7 +61,7 @@ export const processEngPathTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 1105, y: 695 },
-    color: qualityColor,
+    color: brightOrange,
     textPosition: "right",
     stroke: "solid",
     optional: false,
@@ -67,7 +73,7 @@ export const processEngPathTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 1105, y: 655 },
-    color: processColor,
+    color: brightRed,
     textPosition: "left",
     stroke: "solid",
     optional: false,
@@ -79,7 +85,7 @@ export const processEngPathTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 990, y: 590 },
-    color: processColor,
+    color: brightRed,
     textPosition: "left",
     stroke: "solid",
     optional: false,
@@ -91,7 +97,7 @@ export const processEngPathTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 990, y: 540 },
-    color: processColor,
+    color: brightRed,
     textPosition: "left",
     stroke: "solid",
     optional: false,
@@ -103,7 +109,7 @@ export const processEngPathTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 990, y: 490 },
-    color: processColor,
+    color: brightRed,
     textPosition: "left",
     stroke: "solid",
     optional: false,
@@ -156,9 +162,9 @@ export const prodEngPathTKs = [
     position: { x: 1250, y: 540 },
     color: productionColor,
     textPosition: "left",
-    stroke: "solid",
+    stroke: "dashed",
     optional: false,
-    icon: null,
+    icon: "computer",
     url: null
   },
   {
@@ -166,7 +172,7 @@ export const prodEngPathTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 1250, y: 490 },
-    color: productionColor,
+    color: brightGreen,
     textPosition: "left",
     stroke: "solid",
     optional: false,
