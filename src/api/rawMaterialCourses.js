@@ -1,4 +1,4 @@
-import { rawMaterialColor } from "./colors.js";
+import { lhBrightGray, rawMaterialColor } from "./colors.js";
 
 export const rawMatTKs = [
   {
@@ -6,7 +6,7 @@ export const rawMatTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 460, y: 570 },
-    color: rawMaterialColor,
+    color: lhBrightGray,
     textPosition: "northEast",
     stroke: "solid",
     optional: false,
@@ -18,7 +18,7 @@ export const rawMatTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 460, y: 470 },
-    color: rawMaterialColor,
+    color: lhBrightGray,
     textPosition: "southEast",
     stroke: "solid",
     optional: false,
@@ -42,7 +42,7 @@ export const rawMatTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 460, y: 270 },
-    color: rawMaterialColor,
+    color: lhBrightGray,
     textPosition: "right",
     stroke: "dashed",
     optional: false,
@@ -54,7 +54,7 @@ export const rawMatTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 360, y: 470 },
-    color: rawMaterialColor,
+    color: lhBrightGray,
     textPosition: "left",
     stroke: "dashed",
     optional: false,

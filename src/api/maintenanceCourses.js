@@ -1,4 +1,4 @@
-import { maintenanceColor } from "./colors.js";
+import { maintenanceColor, brightLightBlue } from "./colors.js";
 
 export const maintenanceEngPathTKs = [
   {
@@ -8,9 +8,9 @@ export const maintenanceEngPathTKs = [
     position: { x: 1460, y: 775 },
     color: maintenanceColor,
     textPosition: "left",
-    stroke: "solid",
+    stroke: "dashed",
     optional: false,
-    icon: null,
+    icon: "computer",
     url: null
   },
   {
@@ -31,7 +31,7 @@ export const maintenanceEngPathTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 1380, y: 655 },
-    color: maintenanceColor,
+    color: brightLightBlue,
     textPosition: "left",
     stroke: "solid",
     optional: false,
@@ -43,7 +43,7 @@ export const maintenanceEngPathTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 1380, y: 615 },
-    color: maintenanceColor,
+    color: brightLightBlue,
     textPosition: "left",
     stroke: "solid",
     optional: false,
@@ -57,7 +57,7 @@ export const maintenanceEngPathTKs = [
     position: { x: 1380, y: 575 },
     color: maintenanceColor,
     textPosition: "left",
-    stroke: "solid",
+    stroke: "dashed",
     optional: false,
     icon: "computer",
     url:
@@ -68,7 +68,7 @@ export const maintenanceEngPathTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 1380, y: 535 },
-    color: maintenanceColor,
+    color: brightLightBlue,
     textPosition: "left",
     stroke: "solid",
     optional: false,
@@ -82,7 +82,7 @@ export const maintenanceEngPathTKs = [
     position: { x: 1380, y: 495 },
     color: maintenanceColor,
     textPosition: "left",
-    stroke: "solid",
+    stroke: "dashed",
     optional: false,
     icon: "computer",
     url: null
@@ -104,7 +104,7 @@ export const maintenanceEngPathTKs = [
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 1460, y: 270 },
-    color: maintenanceColor,
+    color: brightLightBlue,
     textPosition: "right",
     stroke: "solid",
     optional: false,
@@ -121,9 +121,9 @@ export const electricalEngPathTKs = [
     position: { x: 1540, y: 655 },
     color: maintenanceColor,
     textPosition: "right",
-    stroke: "solid",
+    stroke: "dashed",
     optional: false,
-    icon: null,
+    icon: "computer",
     url: null
   },
   {
@@ -133,9 +133,9 @@ export const electricalEngPathTKs = [
     position: { x: 1540, y: 600 },
     color: maintenanceColor,
     textPosition: "right",
-    stroke: "solid",
+    stroke: "dashed",
     optional: false,
-    icon: null,
+    icon: "computer",
     url: null
   }
 ];

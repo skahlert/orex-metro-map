@@ -48,13 +48,13 @@ export default function (s, item, callback) {
   }
   tk.mouseover(function () {
     tkOuter.animate({ r: 20 }, 50);
-    document.getElementById("react-target").style.cursor = "pointer";
-    callback(item);
+    //document.getElementById("react-target").style.cursor = "pointer";
+    //callback(item);
   })
     .mouseout(function () {
       tkOuter.animate({ r: 15 }, 50);
-      document.getElementById("react-target").style.cursor = "default";
-      callback({});
+      //document.getElementById("react-target").style.cursor = "default";
+      //callback({});
     })
     .click(function () {
       if (item.url) {
