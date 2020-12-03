@@ -4,7 +4,6 @@ import svgPanZoom from "svg-pan-zoom";
 import { renderMap } from "./api/renderMap.js";
 
 const renderSvg = () => {
-  alert("echo");
   const s = Snap(".svg");
   renderMap(s);
   const zoomMap = svgPanZoom(".svg", {
@@ -37,5 +36,5 @@ const renderSvg = () => {
   };
 };
 
-window.addEventListener("DOMContentLoaded", renderSvg);
+//window.addEventListener("DOMContentLoaded", renderSvg);
 renderSvg();
