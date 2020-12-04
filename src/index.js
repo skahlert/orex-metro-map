@@ -38,5 +38,5 @@ const renderSvg = (addZoomTools) => {
   }
 };
 
-//window.addEventListener("DOMContentLoaded", ()=>(renderSvg(true));
-renderSvg(false);
+window.addEventListener("DOMContentLoaded", ()=>(renderSvg(true)));
+//renderSvg(false);
