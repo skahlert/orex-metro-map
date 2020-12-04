@@ -20,8 +20,8 @@ import { legendIcons } from "./legendIcons.js";
 
 export const renderMap = (s) => {
   s.attr({ viewBox: "220 0 1500 1000" });
-  // Lets create big circle in the middle:
-  const background = s.rect(0, 0, 2000, 1000).attr({ fill: "#eee" });
+  // Background:
+  s.rect(0, 0, 2000, 1000).attr({ fill: "#eee" });
 
   const quarryPath1 = s
     .path("M980,950L980,870,595,870,595,670,460,670,460,170")
@@ -96,7 +96,7 @@ export const renderMap = (s) => {
     strokeLinejoin: "round"
   });
 
-  const paths = s.g(
+  s.g(
     quarryPath1,
     quarryPath2,
     quarryPath3,
@@ -172,6 +172,8 @@ const legend = (s) => {
   legendIcons.forEach((item) => {
     TrainingKit(s, item);
   });
+  jobMove(s, 240, 980, 160, 0, "black");
+  s.text(430, 983, "Lateral move");
 };
 
 const jobMove = (s, startX, startY, width, height, color) => {
