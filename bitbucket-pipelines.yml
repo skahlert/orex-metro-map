@@ -15,3 +15,22 @@ pipelines:
             script:
               - npm install
               - npm build
+        - step:
+            name: Deploy to S3
+            deployment: production
+            script:
+              - pipe: atlassian/aws-s3-deploy:0.4.5
+                variables:
+                  AWS_ACCESS_KEY_ID: $AWS_KEY # Optional if already defined in the context.
+                  AWS_SECRET_ACCESS_KEY: $AWS_SECRET # Optional if already defined in the context.
+                  AWS_DEFAULT_REGION: 'eu-west-1' # Optional if already defined in the context.
+                  S3_BUCKET: 'orex-metro-map'
+                  LOCAL_PATH: '/'
+                  # CONTENT_ENCODING: '<string>' # Optional.
+                  ACL: 'public-read' # Optional.
+                  # STORAGE_CLASS: '<string>' # Optional.
+                  # CACHE_CONTROL: '<string>' # Optional.
+                  # EXPIRES: '<timestamp>' # Optional.
+                  # DELETE_FLAG: '<boolean>' # Optional.
+                  # EXTRA_ARGS: '<string>' # Optional.
+                  # DEBUG: '<boolean>' # Optional.
