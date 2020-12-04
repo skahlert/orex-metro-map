@@ -27,7 +27,7 @@ pipelines:
                   AWS_SECRET_ACCESS_KEY: $AWS_SECRET # Optional if already defined in the context.
                   AWS_DEFAULT_REGION: 'eu-west-1' # Optional if already defined in the context.
                   S3_BUCKET: 'orex-metro-map'
-                  LOCAL_PATH: 'dist'
+                  LOCAL_PATH: 'artifact'
                   # CONTENT_ENCODING: '<string>' # Optional.
                   ACL: 'public-read' # Optional.
                   # STORAGE_CLASS: '<string>' # Optional.
