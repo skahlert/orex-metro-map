@@ -14,7 +14,7 @@ pipelines:
               - node
             script:
               - npm install
-              - npm build
+              - npm run build
         - step:
             name: Deploy to S3
             deployment: production
