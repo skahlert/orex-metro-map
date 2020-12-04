@@ -3,7 +3,8 @@ import {
   processColor,
   maintenanceColor,
   qualityColor,
-  rawMaterialColor
+  rawMaterialColor,
+  projectColor
 } from "./colors.js";
 
 export const engineers = [
@@ -115,6 +116,22 @@ export const engineers = [
     name: "Maintenance Manager",
     position: { x: 1460, y: 180 },
     color: maintenanceColor,
+    textPosition: "bottom",
+    stroke: "solid",
+    icon: null
+  },
+  {
+    name: "Project Manager",
+    position: { x: 1700, y: 180 },
+    color: projectColor,
+    textPosition: "bottom",
+    stroke: "solid",
+    icon: null
+  },
+  {
+    name: ["Project", "Engineer"],
+    position: { x: 1700, y: 340 },
+    color: projectColor,
     textPosition: "bottom",
     stroke: "solid",
     icon: null

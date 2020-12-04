@@ -5,7 +5,7 @@ export const maintenanceEngPathTKs = [
     name: ["SAP & Maintenance", "Management System"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    position: { x: 1460, y: 775 },
+    position: { x: 1460, y: 810 },
     color: maintenanceColor,
     textPosition: "left",
     stroke: "dashed",
@@ -18,7 +18,7 @@ export const maintenanceEngPathTKs = [
     name: "Kiln Maintenance",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    position: { x: 1380, y: 695 },
+    position: { x: 1380, y: 750 },
     color: maintenanceColor,
     textPosition: "left",
     stroke: "solid",
@@ -31,7 +31,7 @@ export const maintenanceEngPathTKs = [
     name: ["Vertical Roll Mill", "Maintenance"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    position: { x: 1380, y: 655 },
+    position: { x: 1380, y: 710 },
     color: brightLightBlue,
     textPosition: "left",
     stroke: "solid",
@@ -43,7 +43,7 @@ export const maintenanceEngPathTKs = [
     name: ["Ball Mill &", "Roller Press"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    position: { x: 1380, y: 615 },
+    position: { x: 1380, y: 670 },
     color: brightLightBlue,
     textPosition: "left",
     stroke: "solid",
@@ -55,7 +55,7 @@ export const maintenanceEngPathTKs = [
     name: ["Lubrication &", "Hydraulics"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    position: { x: 1380, y: 575 },
+    position: { x: 1380, y: 630 },
     color: maintenanceColor,
     textPosition: "left",
     stroke: "dashed",
@@ -68,7 +68,7 @@ export const maintenanceEngPathTKs = [
     name: ["Girth Gear &", "Reducers"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    position: { x: 1380, y: 535 },
+    position: { x: 1380, y: 590 },
     color: brightLightBlue,
     textPosition: "left",
     stroke: "solid",
@@ -80,7 +80,7 @@ export const maintenanceEngPathTKs = [
     name: ["Transport &", "Dedusting"],
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    position: { x: 1380, y: 495 },
+    position: { x: 1380, y: 550 },
     color: maintenanceColor,
     textPosition: "left",
     stroke: "dashed",

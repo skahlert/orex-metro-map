@@ -6,7 +6,8 @@ import {
   processColor,
   maintenanceColor,
   qualityColor,
-  rawMaterialColor
+  rawMaterialColor,
+  projectColor
 } from "../api/colors.js";
 
 import { headOfLabTKs } from "./qualityCourses.js";
@@ -17,9 +18,10 @@ import {
 } from "./maintenanceCourses.js";
 import { prodEngPathTKs, processEngPathTKs } from "./processCourses.js";
 import { legendIcons } from "./legendIcons.js";
+import { projectPathTKs } from "./projectCourses.js";
 
 export const renderMap = (s) => {
-  s.attr({ viewBox: "220 0 1500 1000" });
+  s.attr({ viewBox: "220 0 1680 1000" });
   // Background:
   s.rect(0, 0, 2000, 1000).attr({ fill: "#eee" });
 
@@ -75,7 +77,7 @@ export const renderMap = (s) => {
     });
   const maintenancePath = s
     .path(
-      "M1020,950L1020,880,1460,880,1460,720,1380,720,1380,430,1460,430,1460,230"
+      "M1020,950L1020,880,1460,880,1460,780,1380,780,1380,430,1460,430,1460,230"
     )
     .attr({
       stroke: maintenanceColor,
@@ -83,7 +85,7 @@ export const renderMap = (s) => {
       fill: "none",
       strokeLinejoin: "round"
     });
-  const maintenancePath2 = s.path("M1460,720,1540,720,1540,300,1460,300").attr({
+  const maintenancePath2 = s.path("M1460,780,1540,780,1540,300,1460,300").attr({
     stroke: maintenanceColor,
     strokeWidth: 6,
     fill: "none",
@@ -94,6 +96,26 @@ export const renderMap = (s) => {
     strokeWidth: 6,
     fill: "none",
     strokeLinejoin: "round"
+  });
+  const projectPath = s.path("M1700,430L1700,230").attr({
+    stroke: projectColor,
+    strokeWidth: 6,
+    fill: "none",
+    strokeLinejoin: "round"
+  });
+  const projectPath2 = s.path("M1700,180L1460,180").attr({
+    stroke: projectColor,
+    strokeWidth: 1,
+    fill: "none",
+    strokeLinejoin: "round",
+    strokeDasharray: "10,10"
+  });
+  const projectPath3 = s.path("M1700,340L1460,180").attr({
+    stroke: projectColor,
+    strokeWidth: 1,
+    fill: "none",
+    strokeLinejoin: "round",
+    strokeDasharray: "10,10"
   });
 
   s.g(
@@ -107,7 +129,10 @@ export const renderMap = (s) => {
     maintenancePath,
     maintenancePath,
     maintenancePath2,
-    maintenancePath3
+    maintenancePath3,
+    projectPath,
+    projectPath2,
+    projectPath3
   );
 
   jobMove(s, 990, 180, 225, 90, processColor);
@@ -115,6 +140,8 @@ export const renderMap = (s) => {
   jobMove(s, 790, 180, 170, 100, qualityColor);
   jobMove(s, 680, 380, 75, -110, qualityColor);
   jobMove(s, 570, 380, -75, 90, rawMaterialColor);
+  jobMove(s, 1380, 520, 290, -80, maintenanceColor);
+  jobMove(s, 1540, 520, 130, -80, maintenanceColor);
 
   const beReadyOuter = s.circle(1000, 950, 25).attr({
     fill: "#fff",
@@ -154,7 +181,9 @@ export const renderMap = (s) => {
   electricalEngPathTKs.forEach((item) => {
     TrainingKit(s, item);
   });
-
+  projectPathTKs.forEach((item) => {
+    TrainingKit(s, item);
+  });
   engineers.forEach((item) => {
     PositionIcon(s, item);
   });
@@ -176,7 +205,7 @@ const legend = (s) => {
   s.text(430, 983, "Lateral move");
 };
 
-const jobMove = (s, startX, startY, width, height, color) => {
+const jobMove = (s, startX, startY, width, height, color, withArrow = true) => {
   const bendFactor = 0.3;
   const start = `${startX},${startY}`;
   const c1 = `${width * bendFactor} ${0}`;
@@ -184,14 +213,20 @@ const jobMove = (s, startX, startY, width, height, color) => {
   const c3 = `${width / 2} ${height / 2}`;
   const s1 = `${width * (0.5 - bendFactor)} ${height / 2}`;
   const end = `${width / 2} ${height / 2}`;
-  if (width > 0) {
-    s.path(`M${startX + width},${startY + height + 5}l20 -5,-20 -5,0 5`).attr({
-      fill: color
-    });
-  } else {
-    s.path(`M${startX + width},${startY + height + 5}l-20 -5,20 -5,0 5`).attr({
-      fill: color
-    });
+  if (withArrow) {
+    if (width > 0) {
+      s.path(`M${startX + width},${startY + height + 5}l20 -5,-20 -5,0 5`).attr(
+        {
+          fill: color
+        }
+      );
+    } else {
+      s.path(`M${startX + width},${startY + height + 5}l-20 -5,20 -5,0 5`).attr(
+        {
+          fill: color
+        }
+      );
+    }
   }
 
   return s.path(`M${start}c${c1},${mid},${c3}s${s1},${end}`).attr({
