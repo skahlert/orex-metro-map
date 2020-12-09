@@ -40,11 +40,13 @@ export default function (s, item, icon) {
   });
   tk.add(tkOuter, tkInner, description);
   if (item.icon) {
+    const iconGroup = icon.clone();
     //const icon = s.path(icons[item.icon]);
-    icon
-      .transform("translate(" + (x - 7) + " " + (y - 7) + ") scale(0.6 0.6)")
-      .attr({ fill: "#fff" });
-    tk.add(icon);
+    iconGroup.transform(
+      "translate(" + (x - 7.5) + " " + (y - 7.5) + ") scale(0.15 0.15)"
+    );
+    //.attr({ fill: "#fff" });
+    tk.add(iconGroup);
   }
   tk.mouseover(function () {
     tkOuter.animate({ r: 20 }, 50);

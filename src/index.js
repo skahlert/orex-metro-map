@@ -12,10 +12,11 @@ async function loadIcon(url) {
 const renderSvg = async (addZoomTools) => {
   const s = Snap(".svg");
   const icon = await loadIcon("/noun_Laptop_74309.svg");
-  const iconGroup = s.g();
-  iconGroup.append(icon);
-  iconGroup.attr({ fill: "#fff" });
-  renderMap(s, iconGroup);
+  //const icon = await loadIcon("/noun_cooler_1913533.svg");
+  const group = s.g();
+  group.append(icon);
+  //s.append(icon);
+  renderMap(s, group);
 
   if (addZoomTools) {
     const zoomMap = svgPanZoom(".svg", {
