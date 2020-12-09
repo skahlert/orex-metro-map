@@ -3,9 +3,20 @@ import Snap from "snapsvg-cjs";
 import svgPanZoom from "svg-pan-zoom";
 import { renderMap } from "./api/renderMap.js";
 
-const renderSvg = (addZoomTools) => {
+async function loadIcon(url) {
+  return new Promise((resolve) => {
+    Snap.load(url, resolve);
+  });
+}
+
+const renderSvg = async (addZoomTools) => {
   const s = Snap(".svg");
-  renderMap(s);
+  const icon = await loadIcon("/noun_Laptop_74309.svg");
+  const iconGroup = s.g();
+  iconGroup.append(icon);
+  iconGroup.attr({ fill: "#fff" });
+  renderMap(s, iconGroup);
+
   if (addZoomTools) {
     const zoomMap = svgPanZoom(".svg", {
       //viewportSelector: ".svg-pan-zoom_viewport",

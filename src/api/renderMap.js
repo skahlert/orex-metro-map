@@ -20,7 +20,7 @@ import { prodEngPathTKs, processEngPathTKs } from "./processCourses.js";
 import { legendIcons } from "./legendIcons.js";
 import { projectPathTKs } from "./projectCourses.js";
 
-export const renderMap = (s) => {
+export const renderMap = (s, icon) => {
   s.attr({ viewBox: "220 0 1680 1000" });
   // Background:
   s.rect(0, 0, 2000, 1000).attr({ fill: "#eee" });
@@ -164,31 +164,31 @@ export const renderMap = (s) => {
     });
 
   processEngPathTKs.forEach((item) => {
-    TrainingKit(s, item);
+    TrainingKit(s, item, icon);
   });
   headOfLabTKs.forEach((item) => {
-    TrainingKit(s, item);
+    TrainingKit(s, item, icon);
   });
   rawMatTKs.forEach((item) => {
-    TrainingKit(s, item);
+    TrainingKit(s, item, icon);
   });
   prodEngPathTKs.forEach((item) => {
-    TrainingKit(s, item);
+    TrainingKit(s, item, icon);
   });
   maintenanceEngPathTKs.forEach((item) => {
-    TrainingKit(s, item);
+    TrainingKit(s, item, icon);
   });
   electricalEngPathTKs.forEach((item) => {
-    TrainingKit(s, item);
+    TrainingKit(s, item, icon);
   });
   projectPathTKs.forEach((item) => {
-    TrainingKit(s, item);
+    TrainingKit(s, item, icon);
   });
   engineers.forEach((item) => {
     PositionIcon(s, item);
   });
 
-  legend(s);
+  legend(s, icon);
 
   //const jobMove1 = s.path("M990,180s150 -20,150,90c0,90,110,90,110,90").attr({stroke:maintenanceColor,strokeWidth:6,fill:"none",strokeLinejoin:"round"});
 
@@ -197,9 +197,9 @@ export const renderMap = (s) => {
   //M990,180c150 0,75 0,75 90s0 90 150 90
 };
 
-const legend = (s) => {
+const legend = (s, icon) => {
   legendIcons.forEach((item) => {
-    TrainingKit(s, item);
+    TrainingKit(s, item, icon);
   });
   jobMove(s, 240, 980, 160, 0, "black");
   s.text(430, 983, "Lateral move");
