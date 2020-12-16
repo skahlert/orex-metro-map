@@ -99,7 +99,7 @@ export const maintenanceEngPathTKs = [
     stroke: "solid",
     optional: false,
     icon: "star",
-    url: null
+    url: "https://docs.google.com/presentation/d/1r3fEqs4PkjRMJ-uOnNaZ__cQ8etT6E4TsPAYmIIIfcs/edit?usp=sharing"
   },
   {
     name: ["Maintenance Management", "Engineers Dev. Program "],
