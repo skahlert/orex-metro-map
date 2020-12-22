@@ -11,8 +11,7 @@ export const maintenanceEngPathTKs = [
     stroke: "dashed",
     optional: false,
     icon: "computer",
-    url:
-      "https://lafargeholcim.docebosaas.com/pages/39/technical-training-maintenance-courses"
+    url: null
   },
   {
     name: "Kiln Maintenance",
@@ -25,7 +24,7 @@ export const maintenanceEngPathTKs = [
     optional: false,
     icon: "computer",
     url:
-      "https://lafargeholcim.docebosaas.com/pages/39/technical-training-maintenance-courses"
+      "https://lafargeholcim.docebosaas.com/learn/catalog/view/27"
   },
   {
     name: ["Vertical Roll Mill", "Maintenance"],
@@ -58,11 +57,11 @@ export const maintenanceEngPathTKs = [
     position: { x: 1380, y: 630 },
     color: maintenanceColor,
     textPosition: "left",
-    stroke: "dashed",
+    stroke: "solid",
     optional: false,
     icon: "computer",
     url:
-      "https://lafargeholcim.docebosaas.com/pages/39/technical-training-maintenance-courses"
+      "https://lafargeholcim.docebosaas.com/learn/catalog/view/31"
   },
   {
     name: ["Girth Gear &", "Reducers"],
@@ -83,11 +82,11 @@ export const maintenanceEngPathTKs = [
     position: { x: 1380, y: 550 },
     color: maintenanceColor,
     textPosition: "left",
-    stroke: "dashed",
+    stroke: "solid",
     optional: false,
     icon: "computer",
     url:
-      "https://lafargeholcim.docebosaas.com/pages/39/technical-training-maintenance-courses"
+      "https://lafargeholcim.docebosaas.com/learn/catalog/view/32"
   },
   {
     name: ["Preventive Maintenance", "Engineers Dev. Program "],

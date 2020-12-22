@@ -18,7 +18,7 @@ export const processEngPathTKs = [
     optional: false,
     icon: "computer",
     url:
-      "https://lafargeholcim.docebosaas.com/pages/38/technical-training-process-production-courses"
+      "https://lafargeholcim.docebosaas.com/learn/catalog/view/29"
   },
   {
     name: "Grinding I",

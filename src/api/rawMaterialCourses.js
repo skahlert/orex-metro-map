@@ -32,11 +32,11 @@ export const rawMatTKs = [
     position: { x: 570, y: 470 },
     color: rawMaterialColor,
     textPosition: "right",
-    stroke: "dashed",
+    stroke: "solid",
     optional: false,
     icon: "computer",
     url:
-      "https://lafargeholcim.docebosaas.com/pages/42/technical-training-mining-raw-material-handling"
+      "https://lafargeholcim.docebosaas.com/learn/catalog/view/32"
   },
   {
     name: ["Quarry Management", "Dev. Program"],
