@@ -123,10 +123,10 @@ export const processEngPathTKs = [
     position: { x: 990, y: 280 },
     color: processColor,
     textPosition: "northEast",
-    stroke: "dashed",
+    stroke: "solid",
     optional: false,
     icon: "star",
-    url: null
+    url: "https://docs.google.com/presentation/d/1eQ8prW5lTTDIHaQRk5ewmjqg2E0N-S7o7gQgstRgSeY/edit?usp=sharing"
   },
   {
     name: ["Vertical Roller Mill &", "Roller Press"],
