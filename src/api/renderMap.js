@@ -1,5 +1,6 @@
 import PositionIcon from "../ui/PositionIcon.js";
 import TrainingKit from "../ui/TrainingKit.js";
+import InitiationProgram from "../ui/InitiationProgram.js";
 import { engineers } from "../api/roles.js";
 import {
   productionColor,
@@ -143,25 +144,13 @@ export const renderMap = (s) => {
   jobMove(s, 1380, 520, 290, -80, maintenanceColor);
   jobMove(s, 1540, 520, 130, -80, maintenanceColor);
 
-  const beReadyOuter = s.circle(1000, 950, 25).attr({
-    fill: "#fff",
-    stroke: "#4a86e8ff",
-    strokeWidth: 5
+  InitiationProgram(s, {
+    name: "Be Ready",
+    position: { x: 1000, y: 950 },
+    color: "#4a86e8ff",
+    textPosition: "right",
+    url: null
   });
-  const beReadyInner = s.circle(1000, 950, 15).attr({
-    fill: "#fff",
-    stroke: "#4a86e8ff",
-    strokeWidth: 10
-  });
-  const beReady = s.g();
-  beReady.add(beReadyOuter, beReadyInner);
-  beReady
-    .mouseover(function () {
-      beReadyOuter.animate({ r: 30 }, 50);
-    })
-    .mouseout(function () {
-      beReadyOuter.animate({ r: 25 }, 50);
-    });
 
   processEngPathTKs.forEach((item) => {
     TrainingKit(s, item);
