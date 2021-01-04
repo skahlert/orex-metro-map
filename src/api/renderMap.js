@@ -149,7 +149,7 @@ export const renderMap = (s) => {
     position: { x: 1000, y: 950 },
     color: "#4a86e8ff",
     textPosition: "right",
-    url: null
+    url: "https://drive.google.com/file/d/1ZTYKXexGnXfgDIT07DnUjZFhhl_1m0SB/view?usp=sharing"
   });
 
   processEngPathTKs.forEach((item) => {

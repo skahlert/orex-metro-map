@@ -126,7 +126,7 @@ export const electricalEngPathTKs = [
     optional: false,
     icon: "computer",
     url:
-      "https://lafargeholcim.docebosaas.com/pages/39/technical-training-maintenance-courses"
+      null
   },
   {
     name: ["Electical Power &", "Drives"],
@@ -139,6 +139,6 @@ export const electricalEngPathTKs = [
     optional: false,
     icon: "computer",
     url:
-      "https://lafargeholcim.docebosaas.com/pages/39/technical-training-maintenance-courses"
+      "https://lafargeholcim.docebosaas.com/learn/catalog/view/33"
   }
 ];
