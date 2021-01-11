@@ -105,7 +105,7 @@ export const processEngPathTKs = [
     url: null
   },
   {
-    name: ["Emissions &", "Abatement Tech."],
+    name: "Emissions",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     position: { x: 990, y: 490 },
@@ -114,7 +114,7 @@ export const processEngPathTKs = [
     stroke: "solid",
     optional: false,
     icon: null,
-    url: null
+    url: "https://lafargeholcim.docebosaas.com/learn/catalog/view/342"
   },
   {
     name: ["Process Engineers", "Dev. Program"],
