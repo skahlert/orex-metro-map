@@ -11,10 +11,13 @@ export const brightLightBlue = "#93d1e1";
 export const green = "#00965f";
 export const brightGreen = "#95e5c8";
 
+export const blue = "#0073af";
+export const brightBlue = "#73bde5"
+
 export const lhGray = "#5f5046";
 export const lhBrightGray = "#9b887b";
 export const lhLightGray = "#877873";
-export const blue = "#0073af";
+
 export const lightGray = "#d9d9d9";
 
 export const qualityColor = orange;

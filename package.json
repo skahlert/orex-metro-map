@@ -5,9 +5,11 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
+    "process": "parcel process.html --open",
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "save-svg-as-png": "^1.4.17",
     "snapsvg-cjs": "0.0.6",
     "svg-pan-zoom": "3.6.1"
   },

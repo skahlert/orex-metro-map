@@ -6,189 +6,100 @@ import {
   brightRed
 } from "./colors.js";
 
+import {courses} from './individualCourses.js'
+
 export const processEngPathTKs = [
   {
-    name: "Gas Handling & Fans",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.ghf,
     position: { x: 1000, y: 840 },
     color: processColor,
     textPosition: "left",
-    stroke: "solid",
-    optional: false,
-    icon: "computer",
-    url:
-      "https://lafargeholcim.docebosaas.com/learn/catalog/view/29"
   },
   {
-    name: "Grinding I",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.grind1,
     position: { x: 1105, y: 775 },
     color: brightRed,
     textPosition: "left",
-    stroke: "solid",
-    optional: false,
-    icon: null,
-    url: null
   },
   {
-    name: ["Effective Data", "Analysis"],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.eda,
     position: { x: 1105, y: 815 },
     color: brightOrange,
     textPosition: "right",
-    stroke: "solid",
-    optional: false,
-    icon: null,
-    url: null
   },
   {
-    name: "Thermal I",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.therm1,
     position: { x: 1105, y: 735 },
-    color: brightRed,
+    color: processColor,
     textPosition: "left",
-    stroke: "solid",
-    optional: false,
-    icon: null,
-    url: null
   },
   {
-    name: ["Raw Mix &", "Clinker Optimization"],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.rmx,
     position: { x: 1105, y: 695 },
     color: brightOrange,
     textPosition: "right",
-    stroke: "solid",
-    optional: false,
-    icon: null,
-    url: null
   },
   {
-    name: "Safe Grinding of Solid Fuels",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.sgsf,
     position: { x: 1105, y: 655 },
     color: brightRed,
     textPosition: "left",
-    stroke: "solid",
-    optional: false,
-    icon: null,
-    url: null
   },
   {
-    name: "Grinding II",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.grind2,
     position: { x: 990, y: 590 },
     color: brightRed,
     textPosition: "left",
-    stroke: "solid",
-    optional: false,
-    icon: null,
-    url: null
   },
   {
-    name: "Thermal II",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.therm2,
     position: { x: 990, y: 540 },
     color: brightRed,
     textPosition: "left",
-    stroke: "solid",
-    optional: false,
-    icon: null,
-    url: null
   },
   {
-    name: "Emissions",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.emissions,
     position: { x: 990, y: 490 },
-    color: brightRed,
+    color: processColor,
     textPosition: "left",
-    stroke: "solid",
-    optional: false,
-    icon: null,
-    url: "https://lafargeholcim.docebosaas.com/learn/catalog/view/342"
   },
   {
-    name: ["Process Engineers", "Dev. Program"],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.ppedp,
     position: { x: 990, y: 280 },
     color: processColor,
     textPosition: "northEast",
-    stroke: "solid",
-    optional: false,
-    icon: "star",
-    url: "https://docs.google.com/presentation/d/1eQ8prW5lTTDIHaQRk5ewmjqg2E0N-S7o7gQgstRgSeY/edit?usp=sharing"
   },
   {
-    name: ["Vertical Roller Mill &", "Roller Press"],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.vrm_rp,
     position: { x: 990, y: 360 },
-    color: processColor,
+    color: brightRed,
     textPosition: "left",
-    stroke: "solid",
-    optional: true,
-    icon: null,
-    url: null
   },
   {
-    name: ["Process &", "Control Loops Tuning"],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.pcontl_tunig,
     position: { x: 990, y: 320 },
     color: processColor,
     textPosition: "left",
-    stroke: "solid",
-    optional: true,
-    icon: null,
-    url: null
   }
 ];
 
 export const prodEngPathTKs = [
   {
-    name: ["SAP & Maintenance", "Management System"],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.sap_mms,
     position: { x: 1250, y: 540 },
     color: productionColor,
     textPosition: "left",
-    stroke: "dashed",
-    optional: false,
-    icon: "computer",
-    url: null
   },
   {
-    name: "Refractory",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.refrac,
     position: { x: 1250, y: 490 },
     color: brightGreen,
     textPosition: "left",
-    stroke: "solid",
-    optional: false,
-    icon: null,
-    url: null
   },
   {
-    name: ["Production Management", "Dev. Program"],
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    ...courses.pmdp,
     position: { x: 1250, y: 270 },
     color: productionColor,
     textPosition: "right",
-    stroke: "dashed",
-    optional: false,
-    icon: "star",
-    url: null
   }
 ];

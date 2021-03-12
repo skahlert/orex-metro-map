@@ -31,7 +31,7 @@ export default function (s, item, callback) {
   const orientation = settings[item.textPosition];
   const description = s
     .text(x + orientation.offsetX, y + orientation.offsetY, name)
-    .attr({ textAnchor: orientation.anchor });
+    .attr({ textAnchor: orientation.anchor,fontFamily:"sans-serif",'font-size': "0.7em"  });
   description.selectAll("tspan").forEach(function (tspan, i) {
     return tspan.attr({
       x: x + orientation.offsetX,
@@ -43,7 +43,7 @@ export default function (s, item, callback) {
     const icon = s.path(icons[item.icon]);
     icon
       .transform("translate(" + (x - 7) + " " + (y - 7) + ") scale(0.6 0.6)")
-      .attr({ fill: "#fff" });
+      .attr({ fill: item.optional ? color : "#fff" });
     tk.add(icon);
   }
   tk.mouseover(function () {

@@ -1,4 +1,30 @@
-import { settings } from "../api/positionOffsets.js";
+const settings = {
+  "right":{
+    anchor:"start",
+    offsetX:35,
+    offsetY:5,
+  },
+  "left":{
+    anchor:"end",
+    offsetX:-25,
+    offsetY:5,
+  },
+  "bottom":{
+    anchor:"middle",
+    offsetX:0,
+    offsetY:40,
+  },
+  "northEast":{
+    anchor:"start",
+    offsetX:20,
+    offsetY:-20,
+  },
+  "southEast":{
+    anchor:"start",
+    offsetX:20,
+    offsetY:20,
+  }
+}
 
 export default function (s, item) {
   const { position, color, name } = item;
@@ -23,8 +49,8 @@ export default function (s, item) {
   });
   const orientation = settings[item.textPosition];
   const description = s
-    .text(x + orientation.offsetX+10, y + orientation.offsetY, name)
-    .attr({ textAnchor: orientation.anchor, fontWeight: "bold"  });
+    .text(x + orientation.offsetX, y + orientation.offsetY, name)
+    .attr({ textAnchor: orientation.anchor, fontWeight: "bold",fontFamily:"sans-serif",'font-size': "0.7em"  });
   description.selectAll("tspan").forEach(function (tspan, i) {
     return tspan.attr({
       x: x + orientation.offsetX,
